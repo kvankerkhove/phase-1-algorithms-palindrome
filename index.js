@@ -1,9 +1,22 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  let newString = ''
+  for(const char of word) {
+    newString = char + newString
+  }
+  if(newString === word) {
+    return true
+  } else {
+    return false
+  }
 }
 
 /* 
-  Add your pseudocode here
+1.create a variable with an empty string
+2.iterate through give string(word) 
+3. add each char to the beginning of the "empty" string variable
+4. run an if else statement
+5. if given word === new variable, return true
+6. else return false
 */
 
 /*
